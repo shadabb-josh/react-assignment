@@ -25,7 +25,7 @@ const TodoList: React.FC<TodoListProps> = ({
           </tr>
         </thead>
         <tbody>
-          {todos.map((todo) => (
+          {[...todos].reverse().map((todo) => (
             <tr key={todo.id}>
               <td>{todo.id}</td>
               <td
