@@ -25,9 +25,9 @@ const TodoList: React.FC<TodoListProps> = ({
           </tr>
         </thead>
         <tbody>
-          {[...todos].reverse().map((todo) => (
+          {[...todos].reverse().map((todo,index) => (
             <tr key={todo.id}>
-              <td>{todo.id}</td>
+              <td>{index + 1}</td>
               <td
                 className={todo.checked ? "text-decoration-line-through" : ""}
               >
